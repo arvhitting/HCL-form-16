@@ -1,0 +1,156 @@
+
+public List<String> allEmails() {
+        List<String> allEmailsList=new ArrayList<String>();
+allEmailsList.add(enemy@xyx.com);
+allEmailsList.add(friend@friendlist.com);
+allEmailsList.add(friend@friendlist.com);
+allEmailsList.add(enemy@xyx.com);
+allEmailsList.add(friend@friendlist.com);
+allEmailsList.add(enemy@xyx.com);
+List<String> friendListFromAllMail=friendList(allEmailsList)
+Return friendListFromAllMail;
+
+}
+    public static List<String> friendList(List<String> allEmailsList)
+    {
+List<String> friendListFinal=new Arraylist<String<();
+        
+for(String email: allEmailsList)
+            try {
+String sep=”@”
+int sepPos = email.indexOf(sep);
+      if (sepPos == -1) {
+if(email.substring(sepPos +separator.length()).equalsIgnoreCase(“friendlist.com”)
+friendListFinal.add(email)
+         
+      }
+            } catch (IOException e) {
+                e.printStackTrace();    }
+}
+return friendListFinal;
+}
+public void palindromeWordsCheck {
+        System.out.println("Is radar a Palindrome? - " + isPalindrome("radar"));
+        System.out.println("Is apple a Palindrome? - " + palindromeWordsOrNot("apple"));
+    }
+    public static boolean palindromeWordsOrNot (String orinalString) {
+        String reversedString = "";
+    for (int i = orinalString.length() - 1; i >= 0; i--)
+            reversedString = reversedString + orinalString.charAt(i);
+        return orinalString.equals(reversedString);
+
+public static int romanToInt(String s) {	
+if (s == null) {
+return 0;
+}
+int sum = 0, i = 0, len = s.length();
+int current = 0, next = 0;
+for (; i < len - 1; i++) {
+current = findNumber(s.charAt(i) + "");
+next = findNumber(s.charAt(i + 1) + "");
+if (current >= next) {            
+sum += current;
+} else {                        
+sum += next - current;        
+                 i++;                                     }
+        }
+if (i < len) {  
+sum += findNumber(s.charAt(len- 1) + "");
+ }
+                return sum;
+ }
+
+private static int findNumber(String str) {
+         int number = 0;
+public static int romanToInt(String s) {	
+if (s == null) {
+return 0;
+}
+int sum = 0, i = 0, len = s.length();
+int current = 0, next = 0;
+for (; i < len - 1; i++) {
+current = findNumber(s.charAt(i) + "");
+next = findNumber(s.charAt(i + 1) + "");
+if (current >= next) {            
+sum += current;
+} else {                        
+sum += next - current;        
+                 i++;                                     }
+        }
+if (i < len) {  
+sum += findNumber(s.charAt(len- 1) + "");
+ }
+                return sum;
+ }
+private static int findNumber(String str) {
+         int number = 0;
+        switch(str) {
+        case "I":
+        number = 1;
+break;
+            case "IV":
+number = 4;
+break;
+               case "V":
+number = 5;
+break;
+
+case "VI":
+number = 6;
+break;
+case "X":
+number = 10;
+break;
+case "L":
+number = 50;
+break;
+case "XLIX":
+number = 49;
+break;
+case "LX":
+number = 60;
+break;
+              case "CIX":
+number = 109;
+               case "CDXLIV":
+number = 444;
+break;
+
+case "MCMIV":
+number = 1904;
+break;
+default:
+break;
+       }
+      return number;   }     
+
+public class BinarySearch
+{
+    public static int binarySearch(int[] ar, int item, int first, int last)
+    {
+        int mid=(first+last)/2;
+        while(first<=last)
+        {
+            if(ar[mid]==item) return mid;
+            else if(ar[mid]>item) return binarySearch
+            (ar,item,first,mid-1);
+            else return binarySearch(ar,item,mid+1,last);
+        }
+        return -1;
+    }
+    public static void main(String[] args)
+   {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter number of elemnts in array:");
+        int n=sc.nextInt();
+        int ar[]=new int[n];
+       System.out.println("Enter array elements");
+       for(int i=0;i<n;i++) ar[i]=sc.nextInt();
+       System.out.println("Enter element to be searched");
+       int item=sc.nextInt();
+       int index=binarySearch(ar, item, 0, n-1);
+       if(index==-1) System.out.println("Item not found");
+       else System.out.println("Item found at index "+index);
+    }
+}
+
